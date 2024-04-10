@@ -36,8 +36,6 @@ player_data <- player_data %>%
     SecondServeWonPercent = `2ndSvWonPerc`,
   )
 
- 
-
 
 # ----- 1. Outliers and Treatment -----
 ##### 1.1. Boxplots: Detecting Outliers -----
@@ -418,7 +416,11 @@ plot_normality_check(player_data_transformed, variables_to_transform_YJ)
 
 
 
+# To do; 
 
+# 1) Input median values for each outlier for the particular height that the outlier matches, re-run 4 assumptions
+# 2) Run 2 linear models for FirstServeWonPercent and SecondServeWonPercent, run non-parametric tests for other four as assumptions cannot be met and
+#    explain the reasons why we done so; attempt to reconcile/match the outcomes.
 
 
 
